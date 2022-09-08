@@ -15,11 +15,11 @@ const Card = ({ post }) => {
         <div class="p-5">
           <a href="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              {post.post_title}
+              {post.post_title.substring(0, 50)}
             </h5>
           </a>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {post.content}
+            {post.content.substring(0, 50)}
           </p>
           <a
             href="#"
